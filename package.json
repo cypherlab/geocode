@@ -1,0 +1,22 @@
+{
+  "name": "@cypherlab/geocode",
+  "version": "1.0.0",
+  "description": "🌎 Geocoding utilities",
+  "author": "Louis Grellet <louis.grellet@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/cypherlab/cypherlab/tree/master/packages/geocode",
+  "main": "index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "test": "mocha -r esm -r dotenv/config"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.1.0",
+    "mocha": "^6.2.0"
+  }
+}
