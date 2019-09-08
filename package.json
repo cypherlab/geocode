@@ -4,7 +4,7 @@
   "description": "🌎 Geocoding utilities",
   "author": "Louis Grellet <louis.grellet@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com/cypherlab/cypherlab/tree/master/packages/geocode",
+  "repository": "https://github.com/cypherlab/geocode",
   "main": "index.js",
   "source": "src/index.js",
   "scripts": {

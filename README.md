@@ -65,7 +65,7 @@ Include a `.env` file at the root of the package folder containing :
 APIKEY=YourGoogleMapKey
 ```
 
-run test at the root of the lerna repo with
+run test
 ```
 npm run test
 ```
