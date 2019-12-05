@@ -8,6 +8,7 @@
   "main": "index.js",
   "source": "src/index.js",
   "scripts": {
+    "release": "np",
     "test": "mocha -r esm -r dotenv/config"
   },
   "dependencies": {
