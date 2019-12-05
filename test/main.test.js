@@ -24,6 +24,12 @@ describe('@cypherlab/geocode', () => {
       expect(place.address).to.equal('20 Cours Mirabeau, 13100 Aix-en-Provence, France')   
     })
 
+    it('geocode("57 Rue Jean Auguste Senèze 63000 CLERMONT-FERRAND")', async () => {
+      const place = await geocode('57 Rue Jean Auguste Senèze 63000 CLERMONT-FERRAND', apikey)
+      place.should.have.property('place_id')
+      expect(place.address).to.equal('57 Rue Jean Auguste Seneze, 63000 Clermont-Ferrand, France')   
+    })
+
     // it('timeout', done => setTimeout(done, 3000))
 
   })

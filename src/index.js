@@ -6,10 +6,12 @@ import 'isomorphic-fetch'
 export const geocode = (input, apikey) => (
   new Promise(async (resolve, reject) => {
     try{
-      const query = [`address=${input}`]
+      const query = [`address=${encodeURIComponent(input)}`]
       apikey && query.push(`key=${apikey}`)
 
-      const res = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?${query.join('&')}`)
+      let url = `https://maps.googleapis.com/maps/api/geocode/json?${query.join('&')}`
+
+      const res = await fetch(url)
       const json = await res.json()
 
       if(json.error_message) throw new Error(json.error_message)
